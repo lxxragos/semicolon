@@ -1,0 +1,24 @@
+package com.semi.flix.drama;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+@Service("daoService")
+public class DramaDaoServiceImpl implements DramaDaoService{
+	
+	// dao = dramaDao;
+	@Resource(name="dramaDao")
+	DramaDao dao;
+
+	@Override
+	public List<DramaDto> getList(DramaDto dto) {
+		// TODO Auto-generated method stub
+		return dao.getList(dto);
+	}
+
+	
+
+}
