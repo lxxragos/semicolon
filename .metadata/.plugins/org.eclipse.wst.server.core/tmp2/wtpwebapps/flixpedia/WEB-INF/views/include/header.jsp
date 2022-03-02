@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%request.setAttribute("commonURL", request.getContextPath()); %>
+<%
+request.setAttribute("commonURL", request.getContextPath());
+%>
 <meta charset="UTF-8"> 
 
 <!-- header -->
@@ -11,8 +13,8 @@
 					<div class="col-12">
 						<div class="header__content">
 							<!-- header logo -->
-							<a href="index.jsp" class="header__logo">
-								<img src="<%=request.getContextPath() %>/resources/img/logo.svg" alt="">
+							<a href="${commonURL}/views/home" class="header__logo">
+								<img src="${commonURL}/resources/img/logo.svg" alt="">
 							</a>
 							<!-- end header logo -->
 
@@ -21,23 +23,23 @@
 							
 
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="pricing.html">영화</a>
+									<a href="pricing.html" class="header__nav-link">영화</a>
 								</li>
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="pricing.html">예능</a>
+									<a href="${commonURL}/drama/list" class="header__nav-link">드라마</a>
 								</li>
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="${commonURL}/drama/list" >드라마</a>
+									<a href="pricing.html" class="header__nav-link">예능</a>
 								</li>
 
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="faq.html">만화</a>
+									<a href="faq.html" class="header__nav-link">애니메이션</a>
 								</li>
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="faq.html">웹툰</a>
+									<a href="${commonURL}/webtoon/list" class="header__nav-link">웹툰</a>
 								</li>
 								<li class="header__nav-item">
-									<a class="header__nav-link" href="faq.html">도서</a>
+									<a href="faq.html" class="header__nav-link">도서</a>
 								</li>
 
 								<!-- dropdown -->
@@ -45,8 +47,11 @@
 									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-										<li><a href="404.html">공지사항</a></li>
-										<li><a href="404.html">Q&A</a></li>
+										<li><a href="about.html">Q&A</a></li> <!-- list,view작업 안됨 -->
+										<li><a href="about.html">공지사항</a></li> <!-- list,view작업 안됨 -->
+										<li><a href="signin.html">로그인</a></li>
+										<li><a href="signup.html">회원가입</a></li>
+										
 									</ul>
 								</li>
 								<!-- end dropdown -->
@@ -59,7 +64,7 @@
 									<i class="icon ion-ios-search"></i>
 								</button>
 
-								<a href="signin.html" class="header__sign-in">
+								<a class="header__sign-in" href="${commonURL}/member/signin">
 									<i class="icon ion-ios-log-in"></i>
 									<span>sign in</span>
 								</a>

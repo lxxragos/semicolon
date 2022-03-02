@@ -1,0 +1,9 @@
+package com.semi.flix.drama;
+
+import java.util.List;
+
+public interface DramaDao {
+	List<WebtoonDto> getList(WebtoonDto dto);
+	int getTotal(WebtoonDto dto);
+	WebtoonDto getView(WebtoonDto dto);
+}

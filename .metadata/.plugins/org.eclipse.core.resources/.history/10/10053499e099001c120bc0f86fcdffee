@@ -1,0 +1,19 @@
+package com.semi.flix.drama;
+
+public class DramaDto {
+
+	private String board_seq="";
+	private String group_name="";
+	private String genre_code="";
+	private String drama_title="";
+	private String drama_author="";
+	private String drama_content="";
+	private String drama_images="";
+	private int drama_hit=0;
+	
+	
+	
+	
+	
+	
+}
