@@ -1,2 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>2022/03/02 \uC138\uBBF8\uD074\uB860 \uD50C\uB9AD\uC2A4\uD53C\uB514\uC544 \uC6F9\uD230,\uB4DC\uB77C\uB9C8,\uB9E4\uD37C,\uBA64\uBC84,\uCEE4\uBA3C \uD328\uD0A4\uC9C0 \uC788\uC74C</message>\r\n</messages>
 eclipse.preferences.version=1
 repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
